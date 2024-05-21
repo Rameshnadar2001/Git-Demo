@@ -10,3 +10,364 @@ ewef
 fwefwrgrg
 fwregrewgreg
 gfregreg
+
+$ ssh-keygen -t rsa -C "ramesh_nadar@epam.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/ramesh_nadar/.ssh/id_rsa):
+Created directory '/c/Users/ramesh_nadar/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/ramesh_nadar/.ssh/id_rsa
+Your public key has been saved in /c/Users/ramesh_nadar/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:mZfVhJS3tNAbXWt29Y8vVkeYfQP8a4rzhvuu3lQRaM8 ramesh_nadar@epam.com
+The key's randomart image is:
++---[RSA 3072]----+
+|           .o=oo+|
+|            +**+*|
+|            o+B@*|
+|         o o  *E*|
+|        S o   ..=|
+|         .    .=.|
+|            o.= .|
+|           +o+ . |
+|          .+O=   |
++----[SHA256]-----+
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~
+$ git config --global user.name "Ramesh Nadar"
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~
+$ git config --global user.email "ramesh_nadar@epam.com"
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~
+$ git config --global user.email
+ramesh_nadar@epam.com
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~
+$ git config --global user.name
+Ramesh Nadar
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~
+$ cd /c/users/ramesh_nadar/documents
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents
+$ pwd
+/c/users/ramesh_nadar/documents
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents
+$ cd /data
+bash: cd: /data: No such file or directory
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents
+$ cd /c/users/ramesh_nadar/documents/data
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data
+$ git clone git@github.com:Rameshnadar2001/Git-Demo.git
+Cloning into 'Git-Demo'...
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data
+$ cd git-demo/
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Demo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git add .
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Demo.txt
+
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git commit -m "added two lines"
+[main 34d2761] added two lines
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Demo.txt
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git log
+commit 34d2761addea61f337804e4aeff2ed9012b76312 (HEAD -> main)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Tue May 21 16:35:26 2024 +0530
+
+    added two lines
+
+commit 5feb404d1aefbd18584b9d4c16881cad5ec1cf6f (origin/main, origin/HEAD)
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Tue May 21 16:25:15 2024 +0530
+
+    Initial commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 280 bytes | 280.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Rameshnadar2001/Git-Demo.git
+   5feb404..34d2761  main -> main
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git commit -m "added two lines"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Demo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git commit -m "added two liness"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Demo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git commit -m "added two lines"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Demo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git add .
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git commit -m "two"
+[main 56f4375] two
+ 1 file changed, 3 insertions(+)
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 316 bytes | 316.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Rameshnadar2001/Git-Demo.git
+   34d2761..56f4375  main -> main
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git log
+commit 56f43758519f3ed75c5e48287e37f4edfd22d7f5 (HEAD -> main, origin/main, origin/HEAD)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Tue May 21 16:40:16 2024 +0530
+
+    two
+
+commit 34d2761addea61f337804e4aeff2ed9012b76312
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Tue May 21 16:35:26 2024 +0530
+
+    added two lines
+
+commit 5feb404d1aefbd18584b9d4c16881cad5ec1cf6f
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Tue May 21 16:25:15 2024 +0530
+
+    Initial commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 999 bytes | 31.00 KiB/s, done.
+From github.com:Rameshnadar2001/Git-Demo
+   56f4375..e2044a2  main       -> origin/main
+Updating 56f4375..e2044a2
+Fast-forward
+ Demo.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git log
+commit e2044a25a04b2b5bbfae6e797af8b048c4f8813b (HEAD -> main, origin/main, origin/HEAD)
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Tue May 21 16:53:06 2024 +0530
+
+    added 4-5 lines
+
+commit 56f43758519f3ed75c5e48287e37f4edfd22d7f5
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Tue May 21 16:40:16 2024 +0530
+
+    two
+
+commit 34d2761addea61f337804e4aeff2ed9012b76312
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Tue May 21 16:35:26 2024 +0530
+
+    added two lines
+
+commit 5feb404d1aefbd18584b9d4c16881cad5ec1cf6f
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Tue May 21 16:25:15 2024 +0530
+
+    Initial commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git log
+commit e2044a25a04b2b5bbfae6e797af8b048c4f8813b (HEAD -> main, origin/main, origin/HEAD)
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Tue May 21 16:53:06 2024 +0530
+
+    added 4-5 lines
+
+commit 56f43758519f3ed75c5e48287e37f4edfd22d7f5
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Tue May 21 16:40:16 2024 +0530
+
+    two
+
+commit 34d2761addea61f337804e4aeff2ed9012b76312
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Tue May 21 16:35:26 2024 +0530
+
+    added two lines
+
+commit 5feb404d1aefbd18584b9d4c16881cad5ec1cf6f
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Tue May 21 16:25:15 2024 +0530
+
+    Initial commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 974 bytes | 64.00 KiB/s, done.
+From github.com:Rameshnadar2001/Git-Demo
+   e2044a2..d336fb1  main       -> origin/main
+Updating e2044a2..d336fb1
+Fast-forward
+ remote-file | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 remote-file
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git gui&
+[1] 1424
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git gitkit&
+[2] 1432
+git: 'gitkit' is not a git command. See 'git --help'.
+[2]+  Exit 1                  git gitkit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git gitk&
+[2] 1437
+git: 'gitk' is not a git command. See 'git --help'.
+
+The most similar command is
+        gui.tcl
+[2]+  Exit 1                  git gitk
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ gitk&
+[2] 1442
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git log
+commit d9f0ad3758f49b8e23ca026e7454cabca245f668 (HEAD -> main, origin/main, origin/HEAD)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Tue May 21 17:23:33 2024 +0530
+
+    6th line
+
+commit d336fb1c3b0d99f52123d5929bab378448d119a7
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Tue May 21 16:57:31 2024 +0530
+
+    remote-file-1
+
+commit e2044a25a04b2b5bbfae6e797af8b048c4f8813b
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Tue May 21 16:53:06 2024 +0530
+
+    added 4-5 lines
+
+commit 56f43758519f3ed75c5e48287e37f4edfd22d7f5
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Tue May 21 16:40:16 2024 +0530
+
+    two
+
+commit 34d2761addea61f337804e4aeff2ed9012b76312
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Tue May 21 16:35:26 2024 +0530
+
+    added two lines
+
+commit 5feb404d1aefbd18584b9d4c16881cad5ec1cf6f
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Tue May 21 16:25:15 2024 +0530
+
+    Initial commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git show -s --pretty=raw d9f0a
+commit d9f0ad3758f49b8e23ca026e7454cabca245f668
+tree a576a2d0e5ef97b821acaf53c332b23ae6eb8aa2
+parent d336fb1c3b0d99f52123d5929bab378448d119a7
+author Ramesh Nadar <ramesh_nadar@epam.com> 1716292413 +0530
+committer Ramesh Nadar <ramesh_nadar@epam.com> 1716292413 +0530
+
+    6th line
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 /c/users/ramesh_nadar/documents/data/git-demo (main)
+$ git ls-tree a576a
+100644 blob ed2bfb44c57c8cbe603b546729079a6d7834207a    Demo.txt
+100644 blob a25f97210ab062f03f590e1108f29a4227
